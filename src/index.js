@@ -17,6 +17,9 @@ for (n=0; n<(array.length-1); n++) {
     if (array[n+1]==(array[n]+1)) {
       count++;
     }
+    else if  (array[n] === array[n+1]) {
+      continue;
+    }
     else {
       if (count > 1) {
         length = count;
